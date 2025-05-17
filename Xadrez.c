@@ -2,9 +2,10 @@
 
 int main() {
     // Definindo o número de casas para cada movimento
-    const int torre = 5;
-    const int bispo = 5;
-    const int rainha = 8;
+    int torre = 5;
+    int bispo = 5;
+    int rainha = 8;
+    int movimento;
     
     printf("Simulação do movimento da Torre:\n");
     // Torre: movimento horizontal para a direita (usando for)
@@ -27,6 +28,20 @@ int main() {
         printf("Esquerda\n");
         contador_rainha++;
     } while (contador_rainha < rainha);
+
+    printf("\nSimulação do movimento do cavalo:\n");
+    // Cavalo: movimento em L (usando while e for)
+   
+   {
+    for (int  i = 0; i < 2; i++)
+    {
+        printf("Cima \n");
+    }
+    printf("Direita \n");
+   }
+   
+
+    
     
     return 0;
 }
